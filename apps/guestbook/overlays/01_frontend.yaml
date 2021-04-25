@@ -23,3 +23,6 @@ spec:
           env:
           - name: GET_HOSTS_FROM
             value: dns
+          network_mode: host
+          privileged: true
+          user: root
