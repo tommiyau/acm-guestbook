@@ -24,4 +24,4 @@ spec:
           env:
           - name: GET_HOSTS_FROM
             value: dns
-      serviceAccount: privilegeduser
+      serviceAccountName: privilegeduser
