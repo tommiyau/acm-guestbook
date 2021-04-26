@@ -7,7 +7,7 @@ metadata:
 spec:
   host: 
   port:
-    targetPort: 9080
+    targetPort: 80
   subdomain: ""
   to:
     kind: Service
