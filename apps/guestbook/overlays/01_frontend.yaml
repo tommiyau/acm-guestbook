@@ -14,8 +14,8 @@ spec:
         app: guestbook
         tier: frontend
     spec:
-      ServiceAccountName: guestbook-sa
-      ServiceAccount: guestbook-sa
+      serviceAccountName: guestbook-sa
+      serviceAccount: guestbook-sa
       containers:
         - name: frontend
           #image: gcr.io/google-samples/gb-frontend:v6
