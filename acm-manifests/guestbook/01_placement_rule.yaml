@@ -13,4 +13,4 @@ spec:
   clusterSelector:
     matchExpressions: []
     matchLabels:
-      environment: "hub"
+      environment: "sit"
