@@ -25,3 +25,4 @@ spec:
           - name: GET_HOSTS_FROM
             value: dns
       ServiceAccountName: guestbook-sa
+      ServiceAccount: guestbook-sa
