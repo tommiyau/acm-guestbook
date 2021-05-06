@@ -19,7 +19,7 @@ spec:
       containers:
         - name: frontend
           #image: gcr.io/google-samples/gb-frontend:v6
-          image: paulczar/gb-frontend:v5
+          image: paulczar/gb-frontend:v6
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
