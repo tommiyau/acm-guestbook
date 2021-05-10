@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: guestbook-redisslave
+spec:
+  selector:
+    matchLabels:
+      app: guestbook
+      role: slave
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: guestbook
+        role: slave
+        tier: backend
+    spec:
+      containers:
+      - name: redis-slave
+        image: gcr.io/google_samples/gb-redisslave:v3
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 6379
+        env:
+        - name: GET_HOSTS_FROM
+          value: dns
